@@ -7,4 +7,32 @@
 
 :root {
     /*proměnný pro barvy*/
+    /* to nevim co je*/
+}
+
+/* Začnu to teda jednoduše s headerem */
+#hlNapisPico {
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+}
+
+#hlVyhledavacPolic {
+    display: inline-block;
+    height: 25px;
+    padding-top: 5px;
+    margin-left: 5px;
+    border: 0px;
+    font-size: 20px;
+}
+
+
+ptvr {
+    border: 5px black solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: block;
+    margin:auto; 
+    width: 450px;
+    text-align: center;
 }
