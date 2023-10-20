@@ -6,39 +6,42 @@
 }
 
 body {
+    background-image: url('/web/images/BC\ image.jpg');
+    background-position: center;
     background-repeat: no-repeat;
-    background-image: url(/web/images/BC-image.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 :root {
     /*proměnný pro barvy*/
     /* to nevim co je*/
+    /*teprve bude*/
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 /* Začnu to teda jednoduše s headerem */
+/*dodal jsem efekt akor8t to p9smo vypadá blbě*/
 #hlNapisPico {
     text-align: center;
-    display: inline-block;
-    font-size: 25px;
-}
-
-#hlVyhledavacPolic {
-    display: inline-block;
-    height: 25px;
-    padding-top: 5px;
-    margin-left: 5px;
-    border: 0px;
-    font-size: 20px;
-}
-
-
-ptvr {
-    border: 5px black solid;
+    font-size: 40px;
+    padding: .5rem 1rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    display: block;
-    margin:auto; 
-    width: 450px;
-    text-align: center;
+    backdrop-filter: blur(9px) saturate(50%);
+    -webkit-backdrop-filter: blur(9px) saturate(50%);
+    background-color: rgba(17, 25, 40, 0.73);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 500;
+    background-clip: text;
+
+}
+/*to jsem přemístil přímo do h1čky*/
+#hlVyhledavacPolic {
+    /*asi tam nebude vidět (když je to skrytý)*/
 }
