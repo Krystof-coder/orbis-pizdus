@@ -5,8 +5,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* mi nefunguje ten background image, jsem to zkusil překopat odkaz, ale furt nic */
 body {
-    background-image: url('/web/images/BC\ image.jpg');
+    background-image: url('images/BCimage.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,8 +31,7 @@ header {
     text-align: center;
     font-size: 40px;
     padding: .5rem 1rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     backdrop-filter: blur(9px) saturate(50%);
     -webkit-backdrop-filter: blur(9px) saturate(50%);
     background-color: rgba(17, 25, 40, 0.73);
@@ -39,9 +39,33 @@ header {
     color: rgba(255, 255, 255, 0.76);
     font-weight: 500;
     background-clip: text;
+    position: absolute;
+    top: 7.5vh;
 
 }
 /*to jsem přemístil přímo do h1čky*/
 #hlVyhledavacPolic {
     /*asi tam nebude vidět (když je to skrytý)*/
+    /* to je to tajemství v tom! Změnim ale velikost toho řádku, beztak tim ale pojebu celou tu věc*/ 
+    font-size: 34px;
+    width: 200px;
+    background-color: rgba(17, 25, 40, 0.73);
+}
+
+nejhlavnejsipanel {
+    width: 80vw;
+    height: 80vh;
+    background: black;
+    display: block;
+    border-radius: 120px;
+}
+
+main {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
