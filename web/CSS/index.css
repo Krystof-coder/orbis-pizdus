@@ -6,6 +6,7 @@
 }
 
 /* mi nefunguje ten background image, jsem to zkusil překopat odkaz, ale furt nic */
+/*dořešíme pak, mě to taky občas blbne*/
 body {
     background-image: url('images/BCimage.jpg');
     background-position: center;
@@ -52,12 +53,21 @@ header {
     background-color: rgba(17, 25, 40, 0.73);
 }
 
+/*když to je přes "vh" a "vw" tak je to sice responzivní, ale
+když to okno bude moc malý tak se to pak sere.*/
+/*obecně bych nenastavoval výšku páč ta se dodělá podle toho co je uvnitř*/
 nejhlavnejsipanel {
     width: 80vw;
-    height: 80vh;
-    background: black;
-    display: block;
+    min-width: 280px;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.526);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     border-radius: 120px;
+}
+
+.mainbtn {
+    margin: 1rem;
 }
 
 main {
