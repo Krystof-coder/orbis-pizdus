@@ -26,6 +26,14 @@ header {
     justify-content: center;
 }
 
+main {
+    display: block;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Začnu to teda jednoduše s headerem */
 /*dodal jsem efekt akor8t to p9smo vypadá blbě*/
 #hlNapisPico {
@@ -39,9 +47,8 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.125);
     color: rgba(255, 255, 255, 0.76);
     font-weight: 500;
-    background-clip: text;
-    position: absolute;
-    top: 7.5vh;
+    position: relative;
+    top: 2rem;
 
 }
 /*to jsem přemístil přímo do h1čky*/
@@ -56,26 +63,24 @@ header {
 /*když to je přes "vh" a "vw" tak je to sice responzivní, ale
 když to okno bude moc malý tak se to pak sere.*/
 /*obecně bych nenastavoval výšku páč ta se dodělá podle toho co je uvnitř*/
-nejhlavnejsipanel {
-    width: 80vw;
+.nejhlavnejsipanel {
+    width: 50%;
     min-width: 280px;
-    min-height: 300px;
     background-color: rgba(0, 0, 0, 0.526);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    border-radius: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
 }
-
+/*přepsal jsem to na div s tou classou*/
+.nejhlavnejsipanel > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/*ted to vypadá jak novej design microsoft loga*/
 .mainbtn {
     margin: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
 }
 
-main {
-    width: 99vw;
-    height: 100vh;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
-}
