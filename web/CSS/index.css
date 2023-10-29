@@ -49,6 +49,7 @@ main {
     font-weight: 500;
     position: relative;
     top: 2rem;
+    z-index: 1;
 
 }
 /*to jsem přemístil přímo do h1čky*/
@@ -74,7 +75,6 @@ když to okno bude moc malý tak se to pak sere.*/
     flex-direction: column;
     justify-content: center;
     border-radius: 50px;
-    z-index: -1;
 }
 /*přepsal jsem to na div s tou classou*/
 .nejhlavnejsipanel > div {
@@ -86,5 +86,6 @@ když to okno bude moc malý tak se to pak sere.*/
     margin: 1rem;
     aspect-ratio: 1/1;
     border-radius: 50px;
+    background-image: linear-gradient(120deg, rgb(73, 188, 255), rgb(0, 102, 255));
 }
 
