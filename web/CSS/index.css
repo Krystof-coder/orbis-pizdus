@@ -8,7 +8,7 @@
 /* mi nefunguje ten background image, jsem to zkusil překopat odkaz, ale furt nic */
 /*dořešíme pak, mě to taky občas blbne*/
 body {
-    background-image: url('images/BCimage.jpg');
+    background-image: url("https://cdn.discordapp.com/attachments/1050752220628521000/1168170778366316585/pexels-philippe-donn-1169754.jpg?ex=6550cad1&is=653e55d1&hm=53441ed86bc1c5e0ebd8232db6e0b71e30e36e836136bf4f1c96ec5ce4a1844a&");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,10 +67,14 @@ když to okno bude moc malý tak se to pak sere.*/
     width: 50%;
     min-width: 280px;
     background-color: rgba(0, 0, 0, 0.526);
+    backdrop-filter: blur(1px) saturate(250%);
+    -webkit-backdrop-filter: blur(1px) saturate(250%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 50px;
+    z-index: -1;
 }
 /*přepsal jsem to na div s tou classou*/
 .nejhlavnejsipanel > div {
