@@ -94,8 +94,22 @@ když to okno bude moc malý tak se to pak sere -*/
 /*ted to vypadá jak novej design microsoft loga*/
 .mainbtn {
     margin: 1rem;
+    padding: 12px;
     border-radius: 50px;
     min-height: 200px;
     background-image: linear-gradient(120deg, rgb(73, 188, 255), rgb(0, 102, 255));
 }
 
+
+/* to zkusím nějak udělat, ale vůbec nevím jak žejo, jelikož můj front-end či jak se to nazývá je na úrovni, není tak vynikající nom */ 
+nadpisButton{
+    font-size: 3rem;
+    display: block;
+}
+.levyButton {
+    text-align: left;
+}
+
+.pravyButton{
+    text-align: right;
+}
