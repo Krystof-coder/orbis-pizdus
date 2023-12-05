@@ -11,6 +11,6 @@ function input(params) {
 
 function sýrek(params) {
     for(let i = 1; i <= sirky; i++){
-        displaySirky.innerHTML += "<p>" + i +"</p>"
+        displaySirky.innerHTML += "<p>" + i +"</p>";
     }
 }

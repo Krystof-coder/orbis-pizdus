@@ -19,3 +19,11 @@ body {
     height: 100%;
     background-color: rgba(146, 192, 243, 0.588);
 }
+
+.grafika {
+    display: grid;
+}
+
+.grafika > img {
+    
+}
