@@ -1,4 +1,5 @@
 let sirky;
+let displaySirky = document.getElementById('grafika');
 
 function input(params) {
     sirky = document.getElementById('kockajebuh').value;
@@ -10,6 +11,6 @@ function input(params) {
 
 function sýrek(params) {
     for(let i = 1; i <= sirky; i++){
-        document.getElementById('grafika').innerHTML = '';
+        displaySirky.innerHTML += "<p>" + i +"</p>"
     }
 }
