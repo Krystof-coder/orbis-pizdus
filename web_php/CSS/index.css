@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* mi nefunguje ten background image, jsem to zkusil překopat odkaz, ale furt nic */
+/*dořešíme pak, mě to taky občas blbne*/
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/1050752220628521000/1168170778366316585/pexels-philippe-donn-1169754.jpg?ex=6550cad1&is=653e55d1&hm=53441ed86bc1c5e0ebd8232db6e0b71e30e36e836136bf4f1c96ec5ce4a1844a&");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+:root {
+    /*proměnný pro barvy*/
+    /* to nevim co je*/
+    /*teprve bude*/
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: block;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Začnu to teda jednoduše s headerem */
+/*dodal jsem efekt akor8t to p9smo vypadá blbě*/
+#hlNapisPico {
+    text-align: center;
+    font-size: 40px;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(9px) saturate(50%);
+    -webkit-backdrop-filter: blur(9px) saturate(50%);
+    background-color: rgba(17, 25, 40, 0.73);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 500;
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+
+}
+
+#hlNapisPico input {
+    color: wheat;
+    padding: 0;
+}
+
+#hlNapisPico input:active {
+    border: 1px red;
+}
+/*to jsem přemístil přímo do h1čky*/
+#hlVyhledavacPolic {
+    /*asi tam nebude vidět (když je to skrytý)*/
+    /* to je to tajemství v tom! Změnim ale velikost toho řádku, beztak tim ale pojebu celou tu věc*/ 
+    font-size: 34px;
+    width: 200px;
+    background-color: rgba(17, 25, 40, 0.73);
+}
+
+/*když to je přes "vh" a "vw" tak je to sice responzivní, ale
+když to okno bude moc malý tak se to pak sere -*/
+/* to zas můžem přizpůsobit pro malé monitory, přes tu chujovinu, kdy pro to nastavíme třeba, ať se to dává pod sebe, zároveň jsem ale nezamýšlel, jak přesně tam do toho budou sedět ty chujoviny no*/ 
+/*obecně bych nenastavoval výšku páč ta se dodělá podle toho co je uvnitř*/
+.nejhlavnejsipanel {
+    width: 85%;
+    min-height: 85vh;
+    min-width: 280px;
+    background-color: rgba(0, 0, 0, 0.526);
+    backdrop-filter: blur(1px) saturate(250%);
+    -webkit-backdrop-filter: blur(1px) saturate(250%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: grid;
+    border-radius: 50px;
+}
+/*přepsal jsem to na div s tou classou*/
+.nejhlavnejsipanel > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/*ted to vypadá jak novej design microsoft loga*/
+.mainbtn {
+    margin: 1rem;
+    padding: 12px;
+    border-radius: 50px;
+    min-height: 200px;
+    background-image: linear-gradient(120deg, rgb(73, 188, 255), rgb(0, 102, 255));
+}
+
+
+/* to zkusím nějak udělat, ale vůbec nevím jak žejo, jelikož můj front-end či jak se to nazývá je na úrovni, není tak vynikající nom */ 
+nadpisButton{
+    font-size: 3rem;
+    display: block;
+}
+.levyButton {
+    text-align: left;
+}
+
+.pravyButton{
+    text-align: right;
+}
