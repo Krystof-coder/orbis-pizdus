@@ -10,7 +10,8 @@ function input(params) {
 }
 
 function sýrek(params) {
+    displaySirky.innerHTML = '';
     for(let i = 1; i <= sirky; i++){
-        displaySirky.innerHTML += "<p>" + i +"</p>";
+        displaySirky.innerHTML += "<img src='/web/images/sirkav2.svg' alt=''>";
     }
 }
