@@ -10,6 +10,9 @@ function input(params) {
         }else {
     document.getElementById('input').style.display = 'none';
     sýrek();
+    if(sirky % 4 == 1){
+        document.getElementById("")
+    }
         }
 }
 
