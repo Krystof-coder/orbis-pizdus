@@ -5,7 +5,7 @@
 }
 
     body {
-        background-image: url("https://cdn.discordapp.com/attachments/1050752220628521000/1168170778366316585/pexels-philippe-donn-1169754.jpg?ex=6550cad1&is=653e55d1&hm=53441ed86bc1c5e0ebd8232db6e0b71e30e36e836136bf4f1c96ec5ce4a1844a&");
+        background-image: url(/web/images/BCimage.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -68,11 +68,13 @@
 }
 
 .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-block-start: 7rem;
 }
+
+.btn-container > span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;}
 
 .btn {
     /*margin-inline: 2rem;*/
